@@ -1,11 +1,11 @@
-About scine-database-python
-===========================
+About scine-database-python-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scine-database-python-feedstock/blob/main/LICENSE.txt)
 
 Home: https://scine.ethz.ch/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scine-database-python-feedstock/blob/main/LICENSE.txt)
 
 Summary: The SCINE database module is a database wrapper for a MongoDB encoding reaction networks
 (Python bindings).
