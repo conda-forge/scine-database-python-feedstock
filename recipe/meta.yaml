@@ -1,5 +1,5 @@
 {% set name = "scine-database-python" %}
-{% set version = "1.1.0" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/qcscine/database/archive/refs/tags/{{ version }}.tar.gz
-    sha256: a9144631dfb90e06f6924cf58fc5db13719cf8577fcd3bbf788a135060a70c18
+    sha256: 23a7b1cfb7c4e8df2fac70d77d0e9b0ddfffaeb64496a614408db4a564b15703
     patches:
       - skip_library_build.patch
   - url: https://github.com/qcscine/development-utils/archive/refs/tags/5.0.0.tar.gz
@@ -17,7 +17,7 @@ source:
       - pybind11_pin.patch
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   skip: true  # [osx]
   ignore_run_exports:
@@ -26,6 +26,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - ninja
